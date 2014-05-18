@@ -15,10 +15,7 @@ Additional Resources
 ====================
 Sabre API documentation and resources can be found http://developer.sabre.com
 
-This Java Sample Application usese Apache Commons for Base64 Encoding and Jettison for JSON handling.
-
-http://commons.apache.org/
-http://jettison.codehaus.org/
+This Java Sample Application uses Apache Commons(http://commons.apache.org/) for Base64 Encoding and Jettison(http://jettison.codehaus.org/) for JSON handling.
 
 
 Disclaimer of Warranty and Limitation of Liability
