@@ -47,7 +47,7 @@ public class DSApiCalls {
 		DSCommHandler dsC = new DSCommHandler();
 		String token = dsC.getAuthToken("https://api.test.sabre.com",encodedClientIdSecret);
 		String response = dsC.sendRequest("https://api.test.sabre.com/v1/shop/themes", token);
-		//Display the String
+		//Display the response String
 		System.out.println("SDS Response: "+response);
 		
 		//Other Example Calls
