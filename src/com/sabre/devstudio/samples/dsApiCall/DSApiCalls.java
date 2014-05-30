@@ -41,8 +41,15 @@ public class DSApiCalls {
 		final String clientId = "";//Put Your Client Id Here
 		final String clientSecret= "";//Put Your Secret Id Here
 		
-		//Convert the encoded concatenated string to a single base64 encoded string
-		String encodedClientIdSecret = Base64.encodeBase64String((clientId+":"+clientSecret).getBytes());
+		//base64 encode clientId and clientSecret
+        String encodedClientId = Base64.encodeBase64String((clientId).getBytes());
+        String encodedClientSecret = Base64.encodeBase64String((clientSecret).getBytes());
+
+        //Concatenate encoded client and secret strings, separated with colon
+        String encodedClientIdSecret = encodedClientId+":"+encodedClientSecret;
+
+        //Convert the encoded concatenated string to a single base64 encoded string.
+        encodedClientIdSecret = Base64.encodeBase64String(encodedClientIdSecret.getBytes());
 		
 		DSCommHandler dsC = new DSCommHandler();
 		String token = dsC.getAuthToken("https://api.test.sabre.com",encodedClientIdSecret);
