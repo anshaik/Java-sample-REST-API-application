@@ -34,14 +34,14 @@ public class DSApiCalls {
 	 */
 	public static void main(String[] args) {
 		
-		// TODO Auto-generated method stub
-		//
-		//Request authentication
-		//
-		final String clientId = "";//Put Your Client Id Here
-		final String clientSecret= "";//Put Your Secret Id Here
+	// TODO Auto-generated method stub
+	//
+	//Request authentication
+	//
+	final String clientId = "";//Put Your Client Id Here
+	final String clientSecret= "";//Put Your Secret Id Here
 		
-		//base64 encode clientId and clientSecret
+	//base64 encode clientId and clientSecret
         String encodedClientId = Base64.encodeBase64String((clientId).getBytes());
         String encodedClientSecret = Base64.encodeBase64String((clientSecret).getBytes());
 
